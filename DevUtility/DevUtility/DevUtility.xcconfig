@@ -1,0 +1,4 @@
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+DEVELOPMENT_TEAM = A2NYRQCGYA
+PRODUCT_BUNDLE_IDENTIFIER = me.erdal.devutility

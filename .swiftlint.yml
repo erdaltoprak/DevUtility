@@ -1,0 +1,61 @@
+# SwiftLint Configuration - Compatible with swift-format
+
+included:
+  - Sources
+  - DevUtility
+
+excluded:
+  - Carthage
+  - Pods
+  - .build
+  - Build
+  - Frameworks
+
+# Disable rules that conflict with swift-format
+disabled_rules:
+  - opening_brace              # swift-format handles this
+  - trailing_comma             # swift-format adds these
+  - line_length                # swift-format handles this
+  - file_length                # Too strict for real projects
+  - function_body_length       # Context-dependent
+  - cyclomatic_complexity      # Too strict for complex logic
+  - nesting                    # Sometimes necessary
+  - todo                       # TODOs are valid project management
+  - type_body_length           # Large view models are common
+
+opt_in_rules:
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  - empty_count
+  - empty_string
+  - fatal_error_message
+  - first_where
+  - force_unwrapping
+  - vertical_whitespace_closing_braces
+
+analyzer_rules:
+  - unused_declaration
+
+# Relaxed configurations for real-world code
+identifier_name:
+  min_length:
+    warning: 1
+  excluded:
+    - id
+    - x
+    - y
+    - i
+    - j
+    - URL
+    - UUID
+
+type_name:
+  min_length: 3
+  max_length: 50
+
+function_parameter_count:
+  warning: 6
+  error: 10
+
+reporter: "xcode"
