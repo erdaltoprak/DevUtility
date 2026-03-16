@@ -1,6 +1,6 @@
 # DevUtility
 
-![DevUtility](images/header.png)
+![DevUtility](Assets/header.png)
 
 DevUtility is a native SwiftUI app for iOS and macOS that collects small, local developer utilities in one place. The current build focuses on a small proof-of-concept set of tools, with additional planned tools tracked in `TODO.md`.
 
